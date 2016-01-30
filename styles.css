@@ -1,0 +1,15 @@
+body {
+    background-color: purple;
+    font-size: 24px;
+    font-family: georgia, times, serif;
+    font-weight: bolder;
+    color: red;
+}
+/*remember to view the class page guide*/
+p {
+    font-size: 16px;
+    color: white;
+}
+a {
+    color: red; 
+}

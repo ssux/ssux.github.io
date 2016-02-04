@@ -85,6 +85,7 @@ body {
 }
 
 .posts .highlight {
+    display: flex;
     position: relative;
     background: #effee3;
     width: 100%-80px;

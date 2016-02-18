@@ -12,3 +12,13 @@ p {
 address {
     font-size: 12px;
 }
+
+.triangle {
+    background-color: red;
+    width: 0;
+    border: 40px;
+    border-bottom: 40px;
+    border-top: 40px;
+    border-right: 0
+    border-left: 0;
+}

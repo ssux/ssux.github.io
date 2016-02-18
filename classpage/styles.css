@@ -3,6 +3,7 @@ body {
       -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
       background-color: #e6e7e5;
+      background-color: #858aae;
 }
 
 
@@ -68,6 +69,7 @@ body {
     width: calc(100% - 295px);
     margin-right: 10px;
     background-color: #eaffd9;
+    background-color: #eeeeff;
     border-radius: 20px;
     padding: 30px; 
     box-shadow: -3px 3px 20px 0px #657a52;
@@ -78,23 +80,28 @@ body {
 }
 
 .posts h1 {
+    text-align: center;
     font-size: 34px;
 }
 
 .posts h2 {
     font-size: 24px;
+    color: #502f75;
 }
 
 .posts .highlight {
     display: flex;
     position: relative;
     background: #effee3;
+    background: #f2f8fd;
     width: calc(100%-80px);
     margin: 5px;
     color: #575e50;
+    color: #4e4e76;
     box-shadow: 0px 0px 10px 0px #b5d994;
     padding: 7px;
     border-radius: 15px;
+    overflow: scroll;
 }
 
 .posts .code {

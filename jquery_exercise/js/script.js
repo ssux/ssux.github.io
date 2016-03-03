@@ -54,3 +54,6 @@ $("#status").mouseenter(function () {
     }
 })
 
+$("#status").mouseleave(function () {
+    $("#cat").css("display", "none");
+})

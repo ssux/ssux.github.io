@@ -10,15 +10,17 @@ var bgArray = ["red", "blue", "black", "green", "white", "silver",
 
 
 $(".sheep").mouseenter(function(){
-    var randomNum = Math.floor(Math.random()*500) + "px";
+    var randomNum = Math.floor(Math.random()*500)
     var bgColor = bgArray[Math.floor(Math.random()*bgArray.length)];
-    $(this).css("background-color", bgColor)
-    $(this).css('transform', 'translateY(-' + randomNum + 'px)');
+    $(this).css("background-color", bgColor);
+    $(this).css('transform', 'translateY(-' + randomNum + 'px)')
+    $(this).css('transform', 'translateX(' + randomNum + 'px)');
 });
 
 $(".sheep").mouseleave(function(){
-    var randomNum = Math.floor(Math.random()*500) + "px";
     var bgColor2 = bgArray[Math.floor(Math.random()*bgArray.length)];
     $(this).css("background-color", bgColor2)
-    $(this).css('transform', 'translateY(-' + randomNum + 'px)');
 });
+
+//    $(this).css('transform', 'translateY(-' + randomNum + 'px)');
+//    $(this).css('transform', 'translateX(' + randomNum + 'px)');

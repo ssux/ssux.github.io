@@ -30,7 +30,7 @@ $("#pirate").remove();
 
 $("body").addClass("gradient");
 
-var clicked = false
+var clicked = false;
 
 $("#toggle").click(function () {
     if (clicked == false) {
@@ -41,7 +41,7 @@ $("#toggle").click(function () {
         clicked = false; 
         $("#status").html("STOP");
         $("#status").css("background-color", "red");
-        $("toggle").html("Start");
+        $("#toggle").html("Start");
     }
 })
 
@@ -50,7 +50,7 @@ $("#status").mouseenter(function () {
     if (clicked == true) {
         $("#cat").css("display", "block");
     } else {
-         $("#cat").css("display", "none");
+        $("#cat").css("display", "none");
     }
 })
 

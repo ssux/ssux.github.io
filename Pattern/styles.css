@@ -1,0 +1,18 @@
+body{
+    background-color: yellow;
+    text-align: center;
+    font-family: century, georgia, serif;
+    display: inline-block;
+}
+
+h1{
+    font-size: 60px;
+}
+
+.sheep{
+    background-image: url("sheep.png");
+    width:218px;
+    height: 327px;
+    display: inline-block;
+    position: relative;
+}

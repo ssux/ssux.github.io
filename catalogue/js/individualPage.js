@@ -1,13 +1,46 @@
-directions = []
+directions = ["images/kawasaki.png", "images/kawasakirose/kawasaki1.jpg", "images/kawasakirose/kawasaki2.jpg",
+              "images/kawasakirose/kawasaki3.jpg", "images/kawasakirose/kawasaki4.jpg", "images/kawasakirose/kawasaki5.jpg", 
+              "images/kawasakirose/kawasaki6.jpg", "images/kawasakirose/kawasaki7.jpg","images/kawasakirose/kawasaki8.jpg", 
+              "images/kawasakirose/kawasaki9.jpg", "images/kawasakirose/kawasaki10.jpg", "images/kawasakirose/kawasaki11.jpg"]
 
-var clicked = false
+captions = ["", "Make these creases.", "Form the four corners.", "Flatten while rotating counter-clockwise.", "Turn over.", 
+            "Turn the 3D rose by taking each top right corner and folding to the next quadrant counter-clockwise.",
+            "It should look like this.", "Form the rose within the palm of your hand.", 
+            "Turn over and smooth the inside of the rose by pressing down slightly at the base.", 
+            "Fold down edges and tuck in to form the bottom of the rose.", "Turn over, open the center of the flower, and smooth.",
+            "Roll the petals down to curl them."]
 
-$("toggle").click(function() {
-    if (clicked == false) {
-        clicked =true;
-        $(".image").slideUp(.25, )
-    } 
-    else
-        clicked = false; 
-       
-)}
+var step = 0
+
+console.log ('hello');
+$(".clickme").click(function() {
+    console.log("clicked");
+    step++;
+    $(".image").html("<img src=" + directions[step] + ">");
+    $(".caption").html(captions[step]);
+
+        //$(".image").slideUp(.25, )
+})
+    
+$("#up").click(function() {
+     console.log("clicked");
+     console.log(step);
+     if (step > 0) {
+    step--;
+    $(".image").html("<img src="+directions[step]+">");
+    $(".caption").html(captions[step]);
+     }
+})
+    
+//$("#item").click(function(){
+//    $("this").animate({
+//        top: "400px"
+//    }; {
+//        duration: 2000,
+//        easing: "linear"
+//        complete: function() {
+//            $(this).css("top", "0px"); 
+//        }
+//    });
+//);
+//)}

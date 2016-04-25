@@ -12,19 +12,17 @@ captions = ["", "Make these creases.", "Form the four corners.", "Flatten while 
 
 var step = 0
 
-console.log ('hello');
 $(".clickme").click(function() {
-    console.log("clicked");
+  if (step < (directions.length - 1)) {
     step++;
     $(".image").html("<img src=" + directions[step] + ">");
     $(".caption").html(captions[step]);
+    }
 
         //$(".image").slideUp(.25, )
 })
     
 $("#up").click(function() {
-     console.log("clicked");
-     console.log(step);
      if (step > 0) {
     step--;
     $(".image").html("<img src="+directions[step]+">");

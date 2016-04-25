@@ -37,6 +37,57 @@ h2 {
     padding-bottom: 200px;
 }
 
+.form {
+    text-align: center;
+    width: 450px;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-decoration: none;
+    background-color: #f1f2f2;
+}
+
+.form h3 {
+    font-size: 18px;
+}
+
+.form table {
+    table-layout: auto;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+
+table .name, .stepNum, .imgMain {
+    width: 50%;
+}
+
+table .enter {
+    width: 20%;
+}
+
+input[type=text] {
+    padding: 5px 20px;
+    font-weight: 300;
+    font-size: 16px;
+    color: gray;
+    font-style: italic;
+}
+
+.form button {
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #b6d3f5;
+    border: none;
+    padding: 5px 7px;
+}
+
+button .nextButton {
+    background-color: black;
+    color: white;
+}
+
 .item {
     display: inline-block;
     margin: 0 auto;
@@ -59,6 +110,11 @@ h2 {
 .caption {
     margin: auto;
     padding: 5px;
+}
+
+.caption a{ 
+    text-decoration: none;
+    color: gray;
 }
 
 .footer { 

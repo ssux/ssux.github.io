@@ -3,6 +3,7 @@ body {
     font-size: 24px;
     font-family: georgia, times, serif;
     font-weight: bolder;
+    text-align: center;
 
 }
 /*remember to view the class page guide*/
@@ -13,6 +14,11 @@ address {
     font-size: 12px;
 }
 
+.projects {
+    background-color: #b3cfef;
+    padding: 30px;
+}
+
 .triangle {
     background-color: red;
     width: 0;
@@ -21,4 +27,12 @@ address {
     border-top: 40px;
     border-right: 0
     border-left: 0;
+}
+
+form {
+    padding: 30px 0px 0px 0px;
+}
+
+.submit {
+    background-color: #b3cfef;
 }

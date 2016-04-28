@@ -104,6 +104,10 @@ input[type=text] {
     box-shadow: 3px 3px 3px 3px silver;
 }
 
+.image:hover {
+    box-shadow: 3px 3px 3px 3px #ac7278;
+}
+
 .image img {
     max-height: 100%;
 }

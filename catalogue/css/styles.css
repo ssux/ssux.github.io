@@ -63,6 +63,7 @@ table .name, .stepNum, .imgMain {
     width: 50%;
 }
 
+
 table .enter {
     width: 20%;
 }
@@ -81,11 +82,11 @@ input[type=text] {
     background-color: #b6d3f5;
     border: none;
     padding: 5px 7px;
+    border-radius: 4px;
 }
 
-button .nextButton {
+.buttonNext {
     background-color: black;
-    color: white;
 }
 
 .item {

@@ -1,0 +1,91 @@
+.bx-wrapper {
+    max-width: 100%;
+}
+
+.bx-viewport {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 600px;
+}
+
+li {
+    float: none;
+    position: absolute;
+    list-style: none;
+    width: 100%;
+    z-index: 0;
+}
+
+@font-face {
+    font-family: gotham;
+    src: url(gotham_medium.otf);
+}
+
+body {
+    color: black;
+    font-family: gotham, sans-serif;
+    background-color: #ebebec;
+}
+
+.mainFrame {
+    height: 700px;
+}
+
+h1 {
+    font-family: gotham;
+    font-size: 30px;
+}
+
+p {
+    line-height: 50%;
+}
+
+.text {
+    height: 600px;
+    top: 50%;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+    background-color: #ebebec;
+}
+
+h3 {
+    text-align: center;
+    font-size: 16px;
+}
+
+.footer {
+    background-color: white;
+    color: #0a7995;
+    width: 100%;
+    height: 50px;
+    padding-top: 30px;
+    padding-left: 10px;
+    position: fixed;
+    bottom: 0px;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.rightfoot {
+    text-align: right;
+}
+
+.lines {
+    background-color: white;
+    width: 100%;
+    height: 8px;
+    top: 55px;
+    position: absolute;
+}
+
+.linestwo {
+    background-color: white;
+    width: 100%;
+    height: 8px;
+    top: 560px;
+    position: absolute;
+}

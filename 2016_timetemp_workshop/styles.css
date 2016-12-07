@@ -1,0 +1,64 @@
+body{
+    background-color: azure;
+    font-family: georgia;
+    font-size: 30px;
+    display: inline-block;
+    text-align: right;
+    width: 100%;
+    display: flex;
+    padding-left: 70px;
+}
+
+#txt{
+    color: blue;
+    position: absolute;
+    top: 600px;
+    right: 300px;
+    font-size: 18px;
+}
+
+.clocktick
+{
+    display: inline-block;
+}
+
+#clockid{
+    position: absolute;
+    top: 200px;
+    right: 400px;
+}
+
+#clockid:hover{
+    background-color: Cornsilk;
+    
+}
+
+#clockid2{
+    position:absolute;
+    top: 50px;
+    right: 250px;
+}
+
+#clockid3{
+    position: absolute;
+    top: 150px;
+    right: 100px;
+}
+
+#clockid4{
+    position: absolute
+    top: 100px;
+    right: 800px;
+}
+
+#clockid5{
+    position: absolute;
+    left: 50px;
+    top: 200px;
+}
+
+#clockid6{
+    position: absolute
+    top:-300px;
+    right:-300px;
+}

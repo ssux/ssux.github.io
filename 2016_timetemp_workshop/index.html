@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>time and temperature</title>
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery.simpleWeather.min.js"></script>
+        <script type="text/javascript" src="js/coolclock.js"></script>
+        <script type="text/javascript" src="js/moreskins.js"></script>
+        <script>
+        $(document).ready(function() {
+            $.simpleWeather({
+            location: '',
+            woeid: '2306179',
+            unit: 'f',
+            success: function(weather) {
+              html = '<p>'+weather.temp+'&deg;'+weather.units.temp+'</p>';
+              html += '<p>' + weather.city + ', ' + weather.region + '</p>';
+          
+              $("#weather").html(html);
+            },
+            error: function(error) {
+              $("#weather").html('<p>'+error+'</p>');
+            }
+          });
+        });
+        </script>
+        <script>
+            function startTime() {
+            var today = new Date();
+            var h = today.getUTCHours();
+            var m = today.getMinutes();
+            var s = today.getSeconds();
+            m = checkTime(m);
+            s = checkTime(s);
+            document.getElementById('txt').innerHTML =
+            h + ":" + m + ":" + s;
+            var t = setTimeout(startTime, 500);
+            }
+            function checkTime(i) {
+                if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+                return i;
+            }
+     
+        </script>
+         <link href="styles.css" rel="stylesheet" type="text/css">
+    </head>
+    <body onload="startTime()">
+        <div id="weather"></div>
+        <div id="txt"></div>
+        <canvas id="clockid" class="CoolClock:tempskin:250:true:8"></canvas>
+        <canvas id="clockid2" class="CoolClock:tempskin:200:true:5"></canvas>
+        <canvas id="clockid3" class="CoolClock:tempskin:300:true:-8"></canvas>
+        <canvas id="clockid4" class="CoolClock:tempskin:150:true:15"></canvas>
+        <canvas id="clockid5" class="CoolClock:tempskin:250"></canvas>
+
+    </body>
+</html>
